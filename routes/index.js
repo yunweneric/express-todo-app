@@ -17,10 +17,6 @@ router.get("/more", function (req, res, next) {
 });
 router.post("/success", function (req, res, next) {
   res.render("success", { title: "Express" });
-  // setTimeout((req, res) => {
-  //   console.log("Redirecting.....");
-  //   this.res.render("todo-list", { title: "Express" });
-  // },8000);
 });
 
 router.get("*", function (req, res) {
